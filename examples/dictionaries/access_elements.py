@@ -4,17 +4,18 @@ A dictionary stores values you reach by name (the key) instead of by position.
 """
 
 campaign = {
-    "name": "Winter Sale",
-    "channel": "Meta Ads",
-    "impressions": 283000,
-    "clicks": 4838,
+    "name": "Sofiane",
+    "job": "Trader",
+    "city": "Paris",
+    "Internships Availables": 4838,
+    "cost": 47000,
 }
 
 print("the whole thing:", campaign)
 
 # Reading with square brackets
 print("name           :", campaign["name"])
-print("clicks         :", campaign["clicks"])
+print("job         :", campaign["job"])
 
 # A missing key stops the program
 # print(campaign["cost"])   # KeyError: 'cost'
@@ -24,8 +25,8 @@ print("get('cost')    :", campaign.get("cost"))
 print("get with default:", campaign.get("cost", 0))
 
 # Testing before reading
-if "clicks" in campaign:
-    print("clicks are there")
+if "job" in campaign:
+    print("job are there")
 
 # Looping over a dictionary
 for key in campaign:

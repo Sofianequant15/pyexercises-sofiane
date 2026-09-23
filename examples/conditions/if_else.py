@@ -3,7 +3,7 @@
 An if block runs only when its test is true. This is how a program reacts.
 """
 
-age = 20
+age = 18
 
 if age >= 18:
     print("You are an adult.")
@@ -13,7 +13,7 @@ else:
 print("-" * 30)
 
 # Several cases: if, then elif as many times as needed, then else
-score = 4
+score = 5
 
 if score == 5:
     print("Perfect.")
@@ -24,11 +24,11 @@ elif score >= 1:
 else:
     print("Nothing right this time.")
 
-print("-" * 30)
+print("-" * 50)
 
 # Combining tests with and / or / not
 impressions = 283000
-conversions = 0
+conversions = 1
 
 if impressions > 0 and conversions > 0:
     print("This campaign can be measured on cost per conversion.")

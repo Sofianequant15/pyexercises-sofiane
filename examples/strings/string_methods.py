@@ -4,19 +4,19 @@ A method is an action attached to a value. You call it with a dot.
 Strings never change: every method returns a NEW string.
 """
 
-text = "  Campaign Audit Quiz  "
+text = "  My First Edit Python  "
 
 print("original      :", repr(text))
 print("strip()       :", repr(text.strip()))        # removes spaces at both ends
 print("upper()       :", text.strip().upper())
 print("lower()       :", text.strip().lower())
-print("title()       :", "mike castro".title())     # capitalises each word
+print("title()       :", "sofiane didi".title())     # capitalises each word
 print("replace()     :", text.strip().replace(" ", "_"))
 print("startswith()  :", text.strip().startswith("Campaign"))
 print("find()        :", text.strip().find("Audit"))   # position, or -1 if absent
 
 # split() cuts a string into a list, join() puts a list back together
-line = "Winter Sale;Meta Ads;283000"
+line = "BNP Paribas;Sales;London"
 fields = line.split(";")
 print("split(';')    :", fields)
 print("join()        :", " | ".join(fields))
