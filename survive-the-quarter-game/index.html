@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Survive the Quarter · Croissant Rocket</title>
+  <meta name="description" content="Survive ten days of Croissant Rocket marketing chaos." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-top"><span class="badge">🎮 CROISSANT ROCKET // CAREER MODE</span><span class="live">● LIVE SIMULATION</span></div>
+      <h1>🥐 <span>Survive the Quarter</span> 🚀</h1>
+      <p>Ten days of marketing chaos. Protect your budget. Protect your reputation. Make the call and survive the quarter.</p>
+    </section>
+
+    <section id="setup" class="panel setup-grid">
+      <label><span>Player</span><input id="player" value="Sofiane DIDI" maxlength="40" /></label>
+      <label><span>Difficulty</span><select id="difficulty"><option value="easy">Easy · €15,000</option><option value="hard">Hard · €6,000</option></select></label>
+      <button id="startBtn" class="primary">🎮 START MISSION</button>
+    </section>
+
+    <section id="game" hidden>
+      <div class="dashboard">
+        <div class="day-card"><small>MISSION</small><strong id="dayText">DAY 1 / 10</strong></div>
+        <div class="gauge"><div class="g-head"><span>💶 Budget</span><strong id="budgetText"></strong></div><div class="bar"><i id="budgetBar" class="budget"></i></div></div>
+        <div class="gauge"><div class="g-head"><span>🚀 Reputation</span><strong id="repText"></strong></div><div class="bar"><i id="repBar" class="rep"></i></div></div>
+      </div>
+
+      <article class="scenario-card">
+        <div class="eyebrow">TODAY'S CHAOS</div>
+        <h2 id="scenarioText"></h2>
+        <p>Choose your move. Budget and reputation are both on the line.</p>
+      </article>
+
+      <div id="choices" class="choices"></div>
+      <button id="confirmBtn" class="primary wide" disabled>⚡ LOCK IN DECISION</button>
+      <div id="feedback"></div>
+      <div id="result"></div>
+    </section>
+
+    <footer>Built for SKEMA · Survive the Quarter</footer>
+  </main>
+  <script src="scenarios.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
